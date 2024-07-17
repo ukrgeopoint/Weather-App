@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:paddingBottom="52dp"
+        android:text="Find Your Weather!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/cityEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:hint="Enter your city"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="52dp"
+        android:text=""
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text=""
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/temperatureInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text=""
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/windInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text=""
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnForecast"
+        android:text="Forecast"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
